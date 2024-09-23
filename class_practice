@@ -1,0 +1,51 @@
+# class_practice
+# first look at classes - exploring classes and their uses!
+
+# Say hello/ goodbye to a friend and guess a favourite animal
+
+class Friends():
+    def __init__(self, name, location, fave_colour):
+        self.name = name
+        self.location = location
+        self.fave_colour = fave_colour
+
+friend1 = Friends("Jessi Chenery", "Cheshire", "purple")
+friend2 = Friends("Rose Fitzgerald", "Surrey", "blue")
+friend3 = Friends("Michael Peile", "Essex", "red")
+
+class Greeter():
+    def __init__(self, name):
+        self.name = name
+
+    def hello(self):
+        print(f"Hello, {self.name}!")
+    
+    def goodbye(self):
+        print(f"Goodbye, {self.name}! Go paint the town {friend1.fave_colour}!")
+    
+greeter = Greeter(friend1.name)
+greeter.hello()
+
+class Opening_question():
+    def __init__(self):
+        print("Is your favourite animal a...")
+
+new = Opening_question()
+
+
+
+class animal():
+    def __init__(self, name, animalcolour, cuteness):
+        self.name = name
+        self.animalcolour = animalcolour
+        self.cuteness = cuteness
+
+animal1 = animal("Fox", "red", "8/10")
+animal2 = animal("Panda", "black/white", "7/10")
+animal3 = animal("Rhinoceros", "grey", "6/10")
+animal4 = animal("River otter", "brown", "10/10")
+
+print((animal1.name) + (f"? Do you see many in {friend1.location}?"))
+
+greeter.goodbye()
+
