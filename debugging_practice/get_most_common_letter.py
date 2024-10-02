@@ -22,7 +22,7 @@ def get_most_common_letter(text):
     stripped = text.replace(" ", "")
     for char in stripped:
         counter[char] = counter.get(char, 0) + 1
-    #changed [0][0] to [-1][0] for we get highest value rather than lowest (sorted works in ascending)
+    #changed [0][0] to [-1][0] so that we get highest value rather than lowest (sorted works in ascending)
     letter = sorted(counter.items(), key=lambda item: item[1])[-1][0]
     print(counter)
     return letter
